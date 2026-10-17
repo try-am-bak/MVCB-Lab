@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MVCB | Molecular Virology and Cancer Biology Lab, Gauhati University</title>
+<meta name="description" content="Research, team, publications and contact details for the Molecular Virology and Cancer Biology (MVCB) laboratory at Gauhati University.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F7F9F8; --surface:#FFFFFF; --ink:#12261F; --muted:#4D625A; --line:#D5DFDB;
+  --teal:#0F6B5C; --stain:#B3367A; --hero:#E6F1ED; --hero-ink:#12261F;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+:root{color-scheme:light}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 "Public Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Source Serif 4",Georgia,serif;font-weight:600;line-height:1.2;margin:0}
+a{color:var(--teal)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--stain);outline-offset:2px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:11;background:var(--bg);border-bottom:1px solid var(--line)}
+.nav div{max-width:1040px;margin:0 auto;padding:14px 24px;display:flex;gap:24px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.nav strong{font-family:"Source Serif 4",Georgia,serif;font-size:19px}
+.nav nav{display:flex;gap:20px;flex-wrap:wrap}
+.nav nav a{color:var(--ink);text-decoration:none;font-weight:500;font-size:15px}
+.nav nav a:hover{color:var(--stain)}
+.hero{background:var(--hero);color:var(--hero-ink);position:relative;overflow:hidden}
+.hero .in{max-width:1040px;margin:0 auto;padding:88px 24px 96px;position:relative;z-index:1}
+.hero h1{font-size:clamp(34px,6vw,60px);max-width:16em}
+.hero p{max-width:34em;font-size:19px;color:var(--muted);margin:22px 0 0}
+.hero .btns{margin-top:32px;display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:6px;font-weight:600;text-decoration:none;font-size:16px}
+.btn.p{background:var(--teal);color:#fff}
+.btn.s{border:1px solid var(--teal);color:var(--teal)}
+.cells{position:absolute;right:-60px;top:0;width:520px;max-width:70%;height:100%;opacity:.9}
+@media (max-width:760px){.cells{opacity:.28;right:-120px}}
+section{max-width:1040px;margin:0 auto;padding:72px 24px;border-bottom:1px solid var(--line)}
+section:last-of-type{border-bottom:0}
+h2{font-size:clamp(26px,4vw,34px);margin-bottom:28px}
+.lead{max-width:40em;color:var(--muted);font-size:18px;margin:0 0 8px}
+.areas{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:36px;margin-top:36px}
+.areas h3{font-size:21px;margin-bottom:8px;padding-top:14px;border-top:3px solid var(--stain)}
+.areas p{margin:0;color:var(--muted);font-size:16px}
+.team{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:28px}
+.person .ph{aspect-ratio:1;border-radius:50%;background:var(--surface);border:1px solid var(--line);display:grid;place-items:center;font:600 30px "Source Serif 4",Georgia,serif;color:var(--teal);width:112px;margin-bottom:14px}
+.person h3{font-size:19px}
+img.ph{object-fit:cover;display:block}
+.fac{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:10px}
+.fac li{border:1px solid var(--line);background:var(--surface);padding:8px 16px;border-radius:999px;font-size:15px}
+.proj{list-style:none;margin:0 0 8px;padding:0;max-width:52em}
+.proj li{padding:16px 0;border-bottom:1px solid var(--line);display:flex;gap:20px;justify-content:space-between;align-items:baseline}
+.proj .f{flex:none;font-size:13px;font-weight:600;color:var(--teal);border:1px solid var(--line);background:var(--surface);padding:3px 11px;border-radius:999px}
+.ach{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+.card{background:var(--surface);border:1px solid var(--line);border-top:3px solid var(--stain);border-radius:4px;padding:20px 22px}
+.card h3{font-size:21px;margin-bottom:10px}
+.card .r{display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px solid var(--line);font-size:16px}
+.card .r:last-child{border-bottom:0}
+.card .r b{font:600 18px "Source Serif 4",Georgia,serif;color:var(--teal)}
+.card .sub{padding-left:16px;color:var(--muted);font-size:15px}
+@media (max-width:600px){.proj li{flex-direction:column;gap:8px}}
+.grp{font:600 15px "Public Sans",system-ui,sans-serif;color:var(--muted);margin:0 0 20px}
+.grp.s{margin-top:48px;padding-top:28px;border-top:1px solid var(--line)}
+.tw{overflow-x:auto}
+.flt{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:16px}
+.flt input,.flt select{font:inherit;font-size:16px;padding:10px 12px;border:1px solid var(--line);border-radius:6px;background:var(--surface);color:var(--ink)}
+.flt input{flex:1;min-width:220px}
+#cnt{color:var(--muted);font-size:14px}
+.jf{display:grid;gap:18px;max-width:560px}
+.jf label{display:grid;gap:6px;font-weight:600;font-size:15px}
+.jf input,.jf select,.jf textarea{font:inherit;font-size:16px;font-weight:400;padding:11px 12px;border:1px solid var(--line);border-radius:6px;background:var(--surface);color:var(--ink);width:100%}
+.jf textarea{min-height:130px;resize:vertical}
+.jf small{font-weight:400;color:var(--muted)}
+.jf button{justify-self:start;font:600 16px inherit;font-family:inherit;padding:12px 24px;border:0;border-radius:6px;background:var(--teal);color:#fff;cursor:pointer}
+.join{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:48px;align-items:start}
+.join ul{margin:12px 0 0;padding-left:20px;color:var(--muted)}
+.alumni{width:100%;border-collapse:collapse;font-size:16px;min-width:1150px}
+.alumni th{text-align:left;font-size:14px;color:var(--muted);font-weight:600;padding:0 16px 10px 0;border-bottom:2px solid var(--line)}
+.alumni td{padding:14px 16px 14px 0;border-bottom:1px solid var(--line);vertical-align:top}
+.alumni td:first-child{font-weight:600;min-width:150px}
+.alumni td:nth-child(3){min-width:280px}
+.alumni td:nth-child(5){min-width:260px}
+.alumni td:nth-child(4){min-width:200px}
+.alumni td{font-size:15px;line-height:1.5}
+.person p{margin:2px 0 0;color:var(--muted);font-size:15px;line-height:1.45}
+.person .d{margin-top:8px;font-size:14px}
+.person .d b{color:var(--ink);font-weight:600}
+.pubs{list-style:none;margin:0;padding:0;max-width:46em}
+.pubs li{padding:18px 0;border-bottom:1px solid var(--line)}
+.pubs li:first-child{padding-top:0}
+.pubs .t{font-family:"Source Serif 4",Georgia,serif;font-size:19px;font-weight:600;line-height:1.35}
+.pubs .m{color:var(--muted);font-size:15px;margin-top:4px}
+.yr{margin:36px 0 16px;font-size:15px;color:var(--muted);font-weight:600}
+.contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:40px}
+.contact dt{font-weight:600;margin-top:18px}
+.contact dt:first-child{margin-top:0}
+.contact dd{margin:2px 0 0;color:var(--muted)}
+.note{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--teal);padding:18px 20px;border-radius:4px}
+.note p{margin:0;color:var(--muted);font-size:16px}
+footer{max-width:1040px;margin:0 auto;padding:28px 24px 40px;color:var(--muted);font-size:14px}
+@media (prefers-reduced-motion:no-preference){.cells .n{animation:drift 14s ease-in-out infinite alternate}}
+@keyframes drift{from{transform:translateY(0)}to{transform:translateY(-10px)}}
+</style>
+</head>
+<body>
+<header class="nav"><div>
+  <strong>MVCB Lab</strong>
+  <nav aria-label="Main"><a href="#research">Research</a><a href="#projects">Projects</a><a href="#team">Team</a><a href="#achievements">Achievements</a><a href="#publications">Publications</a><a href="#join">Join us</a><a href="#contact">Contact</a></nav>
+</div></header>
+
+<div class="hero">
+  <svg class="cells" viewBox="0 0 520 480" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+    <g fill="none" stroke-width="2">
+      <circle cx="170" cy="150" r="92" stroke="#0F6B5C" opacity=".45"/><circle cx="330" cy="290" r="118" stroke="#0F6B5C" opacity=".35"/>
+      <circle cx="420" cy="110" r="64" stroke="#B3367A" opacity=".5"/><circle cx="130" cy="380" r="70" stroke="#B3367A" opacity=".4"/>
+    </g>
+    <g class="n"><circle cx="170" cy="150" r="30" fill="#5B8CFF" opacity=".75"/><circle cx="330" cy="290" r="40" fill="#5B8CFF" opacity=".65"/><circle cx="420" cy="110" r="22" fill="#5B8CFF" opacity=".7"/><circle cx="130" cy="380" r="25" fill="#5B8CFF" opacity=".6"/></g>
+  </svg>
+  <div class="in">
+    <h1>Molecular Virology and Cancer Biology</h1>
+    <p>The MVCB laboratory at Gauhati University studies the molecular basis of infectious and non-infectious diseases, including viral hepatitis and cancer, in the north-east Indian population.</p>
+    <div class="btns"><a class="btn p" href="#research">Explore our research</a><a class="btn s" href="#contact">Contact the lab</a></div>
+  </div>
+</div>
+
+<section id="research">
+  <h2>Research</h2>
+  <p class="lead">Our lab aims to delineate the mechanisms behind the pathogenesis of infectious and non-infectious diseases that cause morbidity and mortality in the north-east Indian population, using molecular biology tools.</p>
+  <div class="areas">
+    <div><h3>Virology and immunology</h3><p>Molecular virology, especially viral hepatitis, and molecular immunology.</p></div>
+    <div><h3>Reproductive biology</h3><p>Problems such as preterm delivery and recurrent pregnancy loss.</p></div>
+    <div><h3>Cancer biology</h3><p>Cancer biology of various organ aetiologies.</p></div>
+    <div><h3>Disease biology</h3><p>Rheumatoid arthritis, gastrointestinal and liver diseases.</p></div>
+  </div>
+<h3 class="grp s">Facilities</h3>
+  <ul class="fac"><li>Molecular biology tools</li><li>Microscopy</li><li>Mammalian cell culture</li><li>Karyotyping</li><li>Microbiology</li></ul>
+</section>
+
+<section id="projects">
+  <h2>Research projects</h2>
+  <h3 class="grp">As Principal Investigator</h3>
+  <ul class="proj">
+    <li><span>Basic and advanced level training programmes in molecular biology tools used in modern biology, with special emphasis on healthcare</span><span class="f">DHR</span></li>
+    <li><span>Understanding the underlying molecular mechanism associated with the development and severity of alcoholic liver disease: a northeast Indian patient-based study</span><span class="f">DBT</span></li>
+    <li><span>Role of deregulation in multiple signalling cascades and their crosstalk in the development of gall bladder diseases and carcinomas in northeast India (Fast-track Young Scientist award)</span><span class="f">DST</span></li>
+    <li><span>Screening of genetic and immunological factors in human papilloma virus infection induced cervical cancer: a northeast India based study</span><span class="f">DBT</span></li>
+    <li><span>Role of deregulation in multiple signalling cascades, genetic and epigenetic mechanisms in the development of gall bladder diseases and carcinomas in northeast India</span><span class="f">DBT</span></li>
+    <li><span>Evaluate the role of oxidative stress in HEV related pregnancy complications and outcome: a hospital-based study from northeast India</span><span class="f">ICMR</span></li>
+  </ul>
+  <h3 class="grp s">As Co-PI</h3>
+  <ul class="proj">
+    <li><span>Strengthening facilities for integrated MSc-PhD in Food Science</span><span class="f">DST</span></li>
+    <li><span>Association of Toll-like Receptors in susceptibility and severity of hepatitis virus mediated liver diseases and carcinomas in northeast India</span><span class="f">DBT</span></li>
+    <li><span>Creation of facilities for teaching and research in biomedical research and basic clinical science</span><span class="f">DBT</span></li>
+    <li><span>Polymorphism of IL28B gene in northeast India</span><span class="f">DBT</span></li>
+  </ul>
+  <p class="lead" style="font-size:15px;margin-top:16px">Funding agencies: DHR (Department of Health Research), DBT (Department of Biotechnology), DST (Department of Science and Technology), ICMR (Indian Council of Medical Research), Government of India.</p>
+</section>
+
+<section id="team">
+  <h2>Team</h2>
+  <h3 class="grp">Principal Investigator</h3>
+  <div class="team">
+    <div class="person"><div class="ph">SB</div><h3>Prof. Sujoy Bose</h3><p>Principal Investigator<br>Professor, Department of Biotechnology<br>M.Sc. (GU), Ph.D. (JMI)</p></div>
+    </div>
+    <h3 class="grp s">PhD Scholars</h3>
+    <div class="team">
+    <div class="person"><div class="ph">MI</div><h3>Mafidul Islam</h3><p>PhD Scholar</p><p class="d"><b>Awards:</b> Academic Award, KDDW 2022, South Korea</p></div>
+    <div class="person"><div class="ph">SD</div><h3>Sanchali Das</h3><p>PhD Scholar</p><p class="d"><b>Fellowships and exams:</b> INSPIRE Fellow, GATE, SLET</p><p class="d"><b>Awards:</b> Best Poster Award, BIRTH 2025, Lucknow, India</p></div>
+    <div class="person"><div class="ph">KC</div><h3>Kailash Chamuah</h3><p>PhD Scholar<br>Scientist C, VRDL, Guwahati Medical College and Hospital, Guwahati</p><p class="d"><b>Exams:</b> GATE, SLET</p></div>
+    <div class="person"><div class="ph">RD</div><h3>Rimli Dadhara</h3><p>PhD Scholar</p><p class="d"><b>Exams and fellowships:</b> GATE, CSIR-PhD</p></div>
+    <div class="person"><div class="ph">TT</div><h3>Tryambak Thakuria</h3><p>PhD Scholar</p></div>
+    <div class="person"><div class="ph">UD</div><h3>Udita Das</h3><p>PhD Scholar</p></div>
+  </div>
+<h3 class="grp s">Alumni</h3>
+  <div class="flt"><input id="q" type="search" placeholder="Search name, topic, institution, award" aria-label="Search alumni"><select id="yr" aria-label="Filter by PhD year"><option value="">All years</option></select><span id="cnt"></span></div>
+  <div class="tw"><table class="alumni">
+    <thead><tr><th scope="col">Name</th><th scope="col">PhD awarded</th><th scope="col">PhD topic</th><th scope="col">Designation</th><th scope="col">Awards &amp; honours</th><th scope="col">Academic achievement</th></tr></thead>
+    <tbody>
+      <tr><td>Dr. Jonali Owary</td><td>2026</td><td>Study the association of viral co-infection, dysbiosis and altered immunomodulation in pathogenesis of gastric disorders in <em>H. pylori</em> infected cases from Assam</td><td>Assistant Professor, Department of Biotechnology, Bodoland University, Kokhrajhar</td><td>Academic award at KDDW, 2022, South Korea</td><td>GATE<br>SLET</td></tr>
+      <tr><td>Dr. Anjuma Begum</td><td>2023</td><td>Alterations in Vitamin D receptor and resulting differential modulation of key downstream cellular, inflammatory and immunological effectors in Recurrent Pregnancy Loss cases from Assam</td><td>Scientist B, MRU, Tezpur Medical College and Hospital</td><td>100 best ranked abstracts, International Society of Gynaecological Endocrinology<br>FCP Scholarship, Florence, Italy (2018)</td><td>SLET<br>Maulana Azad National Fellowship, 2015</td></tr>
+      <tr><td>Dr. Nidhi Singh</td><td>2021</td><td>Study the deregulation of notch pathway and its downstream effectors in the development of gall bladder anomalies and progression to carcinoma</td><td>Post-Doctoral Research Fellow, Cleveland Clinic Lerner Research Institute, Cleveland, Ohio, US</td><td>Young Investigator and Clinical award and Top 5 posters of distinction award, APDW international conference, Hong Kong (2017)<br>Travel grant, APHPBA international conference, Seoul, South Korea (2019)</td><td>CSIR-JRF<br>CSIR-LS<br>DBT-JRF<br>SLET<br>GATE</td></tr>
+      <tr><td>Dr. Vargab Baruah</td><td>2021</td><td>Study the association of alteration in RANTES-CCR5 axis and resulting immune-modulation in the pathogenesis of hepatitis A infection</td><td>Post-Doctoral Researcher, Cleveland Clinic Lerner Research Institute, Cleveland, Ohio, US</td><td>Young Investigator and Clinical award, APDW international conference, Hong Kong (2017)<br>Best poster award and travel grant, APHPBA international conference, Seoul, South Korea (2019)</td><td>CSIR-JRF<br>CSIR-LS<br>DBT-JRF<br>SLET<br>GATE</td></tr>
+      <tr><td>Dr. Raktim Borkotoky</td><td>2020</td><td>To study the underlying pathology and molecular mechanism(s) of BER pathway genes in the development of oral carcinoma from northeast India</td><td>Research Associate, NECTAR, Guwahati, Assam</td><td>&ndash;</td><td>SLET</td></tr>
+      <tr><td>Dr. Tarun Basumatary</td><td>2019</td><td>Analysis of the molecular factors associated with the risk of development and progression of alcoholic liver disease in Assam</td><td>Scientific Assistant, Department of Molecular Biology and Biotechnology, Cotton University, Guwahati</td><td>Bursary Award / Travel Grant, Asian Pacific Association for the Study of Liver, Shanghai, China (2017)<br>KDDW, South Korea (2019)</td><td>GATE<br>SLET</td></tr>
+      <tr><td>Dr. Dipankar Bujarbaruah</td><td>2019</td><td>Studies on genetic susceptibility to malarial infection among tribal population of Dimoria block, Kamrup, Assam</td><td>Associate Professor, Department of Zoology, Dimoria College, Assam</td><td>&ndash;</td><td>&ndash;</td></tr>
+      <tr><td>Dr. Manash Pratim Kalita</td><td>2019</td><td>Role of host immune modulation in the susceptibility of malaria: a patient-based study in Assam</td><td>Microbiologist, Jal Jeevan Mission, Guwahati, Assam</td><td>Best poster, International Conference on Disease Biology and Therapeutics, IASST, Guwahati, Assam (2014)<br>Best poster, National Congress of Parasitology, New Delhi (2019)</td><td>&ndash;</td></tr>
+      <tr><td>Dr. Somdatta Das</td><td>2019</td><td>Study of molecular and immunological factors involved in the development and severity of rheumatoid arthritis: a northeast Indian population-based study</td><td>Faculty, SBOA Public School, Guwahati, Assam</td><td>2nd Best Poster, EZ APICON, Guwahati, Assam, India</td><td>SLET</td></tr>
+      <tr><td>Dr. Diptika Tiwari</td><td>2018</td><td>Risk factors associated with preterm delivery in northeast India: Genetic immunologies and pathological aspects</td><td>Research Associate II at Freedom from Diabetes Research Foundation, Pune</td><td>100 best ranked abstracts, International Society of Gynaecological Endocrinology<br>FCP Scholarship, Florence, Italy (2018)<br>Full Congress Package Scholarship<br>Young Investigator Award, EASL</td><td>GATE<br>ICMR Post Doctoral Fellow</td></tr>
+      <tr><td>Dr. Rizwana Sultana</td><td>2018</td><td>Understanding the molecular mechanism(s) associated with triple negative breast cancer development and screening the efficacy of target specific drugs as therapeutic interventions</td><td>Scientist D at Dr. B. Borooah Cancer Institute, Guwahati</td><td>&ndash;</td><td>Maulana Azad National Fellowship, 2016</td></tr>
+    </tbody>
+  </table></div>
+  <p id="none" hidden style="color:var(--muted)">No alumni match your search.</p>
+</section>
+
+<section id="achievements">
+  <h2>Achievements of lab members</h2>
+  <div class="ach">
+    <div class="card"><h3>Academics</h3>
+      <div class="r"><span>CSIR-UGC NET JRF</span><b>2</b></div>
+      <div class="r"><span>DBT NET JRF</span><b>2</b></div>
+      <div class="r"><span>GATE</span><b>8</b></div>
+      <div class="r"><span>SLET</span><b>10</b></div>
+      <div class="r"><span>Maulana Azad UGC fellowship</span><b>2</b></div>
+    </div>
+    <div class="card"><h3>Awards</h3>
+      <div class="r"><span>Best poster (national)</span><b>3</b></div>
+      <div class="r"><span>Best poster (international)</span><b>2</b></div>
+      <div class="r"><span>Young investigator award</span><b>3</b></div>
+      <div class="r"><span>International travel grant</span><b>9</b></div>
+      <div class="r"><span>Academic grants</span><b>2</b></div>
+    </div>
+    <div class="card"><h3>Research</h3>
+      <div class="r"><span>Publications</span><b>41</b></div>
+      <div class="r sub"><span>Q1</span><b>13</b></div>
+      <div class="r sub"><span>Q2</span><b>10</b></div>
+      <div class="r sub"><span>Q3</span><b>10</b></div>
+      <div class="r sub"><span>Q4</span><b>8</b></div>
+      <div class="r"><span>Citations</span><b>940</b></div>
+      <div class="r"><span>H-index</span><b>12</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="publications">
+  <h2>Publications</h2>
+  <p class="yr" style="margin-top:0">2024</p>
+  <ul class="pubs">
+    <li><div class="t"><a href="https://doi.org/10.1186/s12906-024-04606-y">In silico, in vitro, and in vivo acute and sub-acute toxicity profiling of whole plant methanol extract of Equisetum diffusum D. Don from the sub-Himalayan West Bengal, India, having ethnobotanical uses</a></div><div class="m">Sarkar S, Modak D, Roy SK, et al. <em>BMC Complementary Medicine and Therapies</em> 24: 324.</div></li>
+  </ul>
+  <p class="yr">2017</p>
+  <ul class="pubs">
+    <li><div class="t">Alcohol Metabolizing Gene Polymorphisms as Genetic Biomarkers of Alcoholic Liver Disease Susceptibility and Severity: A Northeast India Patient Based Study</div><div class="m">Basumatary TK, Begum RH, Bose M, Kalita MP, et al., Bose S. <em>Journal of Krishna Institute of Medical Sciences University</em> 6(3): 62-75.</div></li>
+    
+  </ul>
+  
+  <ul class="pubs">
+    
+  </ul>
+</section>
+
+<section id="join">
+  <h2>Join us</h2>
+  <div class="join">
+    <div>
+      <p class="lead">We welcome enquiries from motivated students and researchers interested in molecular virology, cancer biology and disease biology.</p>
+      <ul>
+        <li>PhD positions, including candidates with NET, GATE or similar fellowships</li>
+        <li>Project staff and research associate roles, when funded projects have openings</li>
+        <li>MSc dissertation and project students</li>
+        <li><strong>Internships:</strong> short-term internships and summer training for undergraduate and MSc students, hands-on with molecular biology and cell culture techniques</li>
+      </ul>
+      <p style="color:var(--muted);font-size:15px;margin-top:20px">Fill in the short form. It opens your email app with the message ready to send to the lab. Please attach your CV there.</p>
+    </div>
+    <form class="jf" id="jf">
+      <label>Your name<input name="name" required autocomplete="name"></label>
+      <label>Your email<input name="email" type="email" required autocomplete="email"></label>
+      <label>I am interested in
+        <select name="pos"><option>PhD position</option><option>Project staff / research associate</option><option>MSc dissertation or project</option><option>Internship / summer training</option><option>Collaboration</option><option>Something else</option></select>
+      </label>
+      <label>Short details <small>(your background, fellowships such as NET or GATE, and research interests; for internships, your year of study and preferred dates)</small><textarea name="msg" required></textarea></label>
+      <button type="submit">Send by email</button>
+      <p id="jmsg" role="status" style="margin:0;color:var(--muted);font-size:15px"></p>
+    </form>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="contact">
+    <dl style="margin:0">
+      <dt>Email</dt><dd><a href="mailto:mvcb.lab@gmail.com">mvcb.lab@gmail.com</a></dd>
+      <dt>Phone</dt><dd>+91 00000 00000</dd>
+      <dt>Address</dt><dd>Department of Biotechnology<br>Gauhati University, Guwahati, Assam 781014</dd>
+    </dl>
+    <div class="note"><p><strong>Want to join the lab?</strong> See the <a href="#join">Join us</a> section above.</p></div>
+  </div>
+</section>
+
+<footer>&copy; 2026 Molecular Virology and Cancer Biology (MVCB) Laboratory, Gauhati University.</footer>
+<script>
+(function(){var q=document.getElementById('q'),y=document.getElementById('yr'),c=document.getElementById('cnt'),n=document.getElementById('none'),rows=[].slice.call(document.querySelectorAll('.alumni tbody tr'));
+var yrs=[];rows.forEach(function(r){var v=r.cells[1].textContent.trim();if(yrs.indexOf(v)<0)yrs.push(v)});
+yrs.forEach(function(v){var o=document.createElement('option');o.value=v;o.textContent=v;y.appendChild(o)});
+function f(){var t=q.value.toLowerCase().trim(),v=y.value,k=0;rows.forEach(function(r){var ok=(!v||r.cells[1].textContent.trim()===v)&&(!t||r.textContent.toLowerCase().indexOf(t)>-1);r.hidden=!ok;if(ok)k++});c.textContent=k+' of '+rows.length+' shown';n.hidden=k>0}
+q.addEventListener('input',f);y.addEventListener('change',f);f();})();
+</script>
+<script>
+(function(){var f=document.getElementById('jf'),m=document.getElementById('jmsg');
+f.addEventListener('submit',function(e){e.preventDefault();var d=new FormData(f),n=d.get('name'),p=d.get('pos');
+var s='Enquiry: '+p+' – '+n;
+var b='Name: '+n+'\nEmail: '+d.get('email')+'\nInterested in: '+p+'\n\n'+d.get('msg')+'\n\n(CV attached)';
+m.textContent='Opening your email app. If nothing opens, write to mvcb.lab@gmail.com directly.';
+window.location.href='mailto:mvcb.lab@gmail.com?subject='+encodeURIComponent(s)+'&body='+encodeURIComponent(b);});})();
+</script>
+</body>
+</html>
